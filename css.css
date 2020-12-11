@@ -1,0 +1,407 @@
+body,
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: url(bilder/background.jpg);
+    /* background: url(bilder/background.png); */
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+}
+
+.aboutText {
+    box-sizing: border-box;
+    padding: 1%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: rgba(0, 200, 250, 0.2);
+    height: 70%;
+    color: white;
+    text-align: center;
+}
+
+.galleri .gallery>div {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 25%;
+}
+
+.aboutText h2,
+.welcome h2 {
+    text-decoration: underline;
+}
+
+.links p {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.galleri div img {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+}
+
+.sent,
+.fail {
+    display: none;
+    transform: translate(-50%, 0%);
+    width: auto;
+    top: 15%;
+    left: 50%;
+    height: 3.5%;
+    position: fixed;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 10;
+}
+
+form {
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 87%;
+    top: 50%;
+    height: 50%;
+    width: 25%;
+}
+
+form h3 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+form input {
+    box-sizing: border-box;
+    padding: 1%;
+    margin-bottom: 5%;
+    width: 50%
+}
+
+.submit {
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 2px solid black;
+    background: white;
+    margin-top: 3%;
+    font-size: 120%;
+    padding: 2%;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sent {
+
+    background: lightgreen;
+    border: 25px solid lightgreen;
+}
+
+.fail {
+
+    background: red;
+    border: 25px solid red;
+}
+
+.sent p,
+.fail p {
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.home canvas,
+.about canvas {
+    display: none;
+}
+
+.flappy button {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 12%;
+    left: 27.5%;
+    cursor: pointer;
+    background: rgb(51, 51, 51);
+    color: white;
+    font-size: 90%;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.home .logo,
+.about .logo {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: url(bilder/logo.png);
+    background-size: 120% 130%;
+    background-position: center 30%;
+    text-align: center;
+}
+
+.home .logo {
+    left: 50%;
+}
+
+.home .menu {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    /* background: green; */
+    left: 50%;
+    top: 43%;
+    height: 5%;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+.flappy .menu,
+.about .menu,
+.battleships .menu,
+.galleri .menu {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    /* background: green; */
+    left: 50%;
+    top: 8%;
+    height: 5%;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+.links {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    /* background: pink; */
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.links a {
+    position: relative;
+    display: inline-block;
+    color: white;
+    margin: 0 2%;
+    padding: 0 2%;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(0, 200, 250, 0.3);
+    background: rgba(0, 200, 250, 0.2);
+    height: 80%;
+    text-align: center;
+    text-decoration: none;
+    z-index: 15;
+    /* box-sizing: border-box; */
+}
+
+.welcome {
+    position: fixed;
+    transform: translate(-50%);
+    left: 50%;
+    top: 50%;
+    background: rgba(0, 200, 250, 0.2);
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+
+.dropper {
+    display: none;
+    position: fixed;
+    height: 200%;
+    top: 100%;
+    left: 0;
+    width: 40%;
+}
+
+.dropper a {
+    background: rgba(0, 200, 250, 0.4);
+    box-shadow: 0px 10px 10px black;
+    height: 40%;
+    margin-top: 4%;
+}
+
+@media (min-width: 800px) {
+    .battleships h1 {
+        display: none;
+    }
+
+    .aboutText {
+        width: 35%;
+    }
+
+    .lengthB {
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 12%;
+        left: 11%;
+        width: 5%;
+
+    }
+
+    .dirB {
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 12%;
+        left: 17%;
+        width: 5%;
+
+    }
+
+    .flappy canvas,
+    .battleships canvas {
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 55%;
+        left: 50%;
+        border: 5px solid black;
+    }
+
+    .flappy button {
+        top: 12%;
+    }
+
+    .flappy button:hover {
+        background: rgb(41, 41, 41);
+
+    }
+
+    .home .logo,
+    .about .logo {
+        height: 200px;
+        width: 200px;
+    }
+
+    .about .logo {
+        left: 20%;
+    }
+
+    .home .menu,
+    .flappy .menu,
+    .about .menu,
+    .battleships .menu,
+    .galleri .menu {
+        width: 50%;
+    }
+
+
+    .links {
+        width: 500px;
+    }
+
+    .showing {
+        position: absolute;
+        width: 100%;
+        background: rgba(0, 200, 250, 0.2);
+        bottom: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .backgrounde {
+        display: none;
+    }
+
+    .welcome {
+        height: 20%;
+        width: 600px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .galleri .gallery>div {
+        width: 90%;
+    }
+
+    canvas {
+        position: fixed;
+        transform: translate(-50%);
+        left: 50%;
+        top: 10%;
+        width: 80% !important;
+        height: 60% !important;
+    }
+
+    .battleships canvas,
+    .battleships input {
+        display: none;
+    }
+
+    .battleships h1 {
+        color: white;
+        position: fixed;
+        transform: translate(-50%);
+        left: 50%;
+        top: 30%;
+
+    }
+
+    .flappy button {
+        top: 75%;
+    }
+
+    .home .logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .home .menu,
+    .flappy .menu,
+    .about .menu,
+    .battleships .menu,
+    .galleri .menu {
+        width: 100%;
+    }
+
+
+    .links {
+        font-size: 80%;
+        width: 90%;
+    }
+
+
+    .welcome {
+        height: 35%;
+        width: 80%;
+    }
+
+    form,
+    .fail,
+    .sent,
+    .about .logo {
+        display: none;
+    }
+
+    .aboutText {
+        width: 85%;
+
+    }
+
+    .aboutText p {
+        font-size: 80%;
+    }
+}
